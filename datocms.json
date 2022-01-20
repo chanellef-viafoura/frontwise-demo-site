@@ -2,7 +2,7 @@
   "name": "Viafoura Demo",
   "description": "This is a template for a blog powered by DatoCMS, NextJS and Viafoura Engaging Tools",
   "previewImage": "https://www.datocms-assets.com/55856/1640274387-viafoura-demo.png",
-  "livePreviewUrl": "https://demo.viafoura.com/",
+  "livePreviewUrl": "https://frontwise-demo-site.vercel.app/",
   "repo": "viafoura/demo-site",
   "datocmsProjectId": "55856",
   "deploymentType": "vercel",
