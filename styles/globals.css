@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-sans;
+  }
+  h1 {
+    @apply text-4xl antialiased font-bold text-gray-800;
+  }
+  h2 {
+    @apply text-3xl font-bold text-gray-800;
+  }
+  h3 {
+    @apply text-2xl font-semibold text-gray-800;
+  }
+  svg {
+    @apply inline align-baseline;
+  }
+}
+
+/* HTML */
+nav .viafoura,
+nav .viafoura .vf-tray-trigger:hover,
+nav .viafoura .vf-tray-trigger:focus {
+  color: white !important;
+  background-color: transparent;
+}
+
+/* Viafoura Identifiers */
+#vf-content-recirculation-container {
+  min-height: 338.84px !important;
+}
+#vf-conversation-starter-container {
+  min-height: 275.19px !important;
+}
+#vf-conversations-container {
+  min-height: 800px !important;
+}
+
+/* Custom Identifiers*/
+form#vf-broadcast-notification {
+  @apply px-8 pt-6 pb-8 mt-6 mb-4 bg-white border-stone-200 border-[1px] rounded shadow-lg;
+}
+#vf-broadcast-notification label {
+  @apply text-sm font-semibold text-stone-600;
+}
+#vf-broadcast-notification input,
+#vf-broadcast-notification select,
+#vf-broadcast-notification textarea {
+  @apply w-full mt-1 mb-4 text-sm rounded text-stone-600 border-stone-300 focus:ring-stone-400;
+}
+#vf-broadcast-notification button {
+  @apply flex px-6 py-4 m-auto mt-4 mb-2 text-base text-white bg-indigo-500 rounded hover:bg-indigo-600 disabled:bg-indigo-300;
+}
+
+/* Viafoura Classes */
+.viafoura {
+  --reserved-space-top: 62px !important;
+}
+.vf-trending-articles__header {
+  @apply text-lg font-bold pb-2 capitalize !important;
+}
+.vf-comments-count {
+  @apply text-base font-semibold text-gray-800 !important;
+}
+.vf-expanding-hover-light::before {
+  border-width: 0 0 3px 0 !important;
+}
+.vf-account-nav-illustration {
+  text-align: center !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+.vf-share-bar.vf-share-bar-horizontal {
+  margin: -20px 0 20px -10px !important;
+}
+.vf-share-bar-vertical {
+  position: absolute !important;
+  left: -45px !important;
+}
+.vf-share-bar-vertical ul {
+  position: fixed !important;
+}
+.vf-topic-follow-button {
+  border-color: #ccc !important;
+  background-color: #fafafa !important;
+  color: #181818 !important;
+  font-size: 12px !important;
+  min-width: 75px !important;
+  height: 32px !important;
+}
+.vf-topic-unfollow-button {
+  font-size: 12px !important;
+  min-width: 100px !important;
+  height: 32px !important;
+  line-height: -1px !important;
+}
