@@ -61,9 +61,9 @@ form#vf-broadcast-notification {
 }
 
 .viafoura.custom-sharebar-vertical {
-  position: fixed;
-  left: 45px;
-  min-width: 65px;
+  position: absolute;
+  left: -90px;
+  min-width: 40px;
 }
 .vf-trending-articles__header {
   @apply text-lg font-bold pb-2 capitalize !important;
