@@ -19,7 +19,7 @@ export default class MyDocument extends Document {
           <script
             type="text/javascript"
             async
-            src="//cdn.viafoura.net/front/0.0.22-PR-41-23-18-aa38fc8/index.js"
+            src="//cdn.viafoura.net/entry/index.js"
           ></script>
         </body>
       </Html>
