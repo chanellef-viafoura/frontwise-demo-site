@@ -1,6 +1,19 @@
 import Document, { Head, Html, Main, NextScript } from "next/document";
 
+import { cdnUrl } from "@/graphql/cdnUrl";
+import { fetchGraphQL } from "@/graphql/fetchGraphQL";
+
 export default class MyDocument extends Document {
+  static async getInitialProps(ctx) {
+    
+    const data = await fetchGraphQL({
+      query: cdnUrl,
+    });
+
+    const initialProps = await Document.getInitialProps(ctx);
+    return { ...initialProps, cdnURL: data.cdnurl.url }
+  }
+
   render() {
     return (
       <Html lang="en" className="scroll-smooth">
@@ -19,7 +32,7 @@ export default class MyDocument extends Document {
           <script
             type="text/javascript"
             async
-            src="//cdn.viafoura.net/entry/index.js"
+            src={this.props.cdnURL}
           ></script>
         </body>
       </Html>
