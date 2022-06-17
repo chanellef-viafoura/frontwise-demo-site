@@ -1,6 +1,6 @@
 export default function VfTopicFollow({ topicId, topicName, topicType }) {
   return (
-    <div className="viafoura">
+    <div className="viafoura" style="min-height: 0px">
       <vf-topic-follow
         topic-id={topicId}
         topic-name={topicName}
